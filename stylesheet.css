@@ -1,0 +1,242 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Pangolin', cursive;
+	line-height: 1.5;
+}
+.header{
+	min-height: 100vh;
+	background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),url('food1.png') center/cover no-repeat fixed;
+	margin-top:auto;
+	}
+.hero{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	background-attachment: fixed;
+	width: 100%;
+	height:100%;
+}
+.hero .title{
+	color: #fff;
+	font-size: 50px;
+
+}
+.hero-button{
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 13px 20px;
+	border-radius: 200px;
+	font-weight: bold;
+	background: orange;
+	color: #fff;
+	cursor:pointer;
+	border:2px solid orange;
+	margin-top: 10px;
+}
+.title-text{
+	font-size: 40px;
+	text-align: center;
+}
+#about{
+	padding: 40px;
+}
+.about{
+	margin: 30px 0;
+	display: flex;
+}
+.about-icon .fas{
+	font-size: 60px;
+	color: orange;
+	margin-right: 20px;
+
+}
+.about-subtitle{
+	text-transform: capitalize;
+	color: orange;
+	font-size: 25px;
+}
+.hero-button:hover{
+	background: #fff;
+	color: orange;
+	border:none;
+}
+.pulsate{
+	animation: pulsate 3s ease-in-out;
+	animation-iteration-count: infinite;
+	opacity: .3;
+	color:black;
+
+}
+@-webkit-keyframes pulsate{
+	0%{
+		opacity: .3;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: .3;
+	}
+}
+.about-info{
+	margin-top: 10px
+	line-height:1.5;
+}
+.about-icon:hover .fas,
+.about-subtitle:hover{
+	transition: transform 2s ease,color 2s ease;
+	transform: translateY(-10px);
+	cursor: pointer;
+	color: #cd6100;
+}
+@media screen and(min-width: 576px){
+	.about-center{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.about{
+		flex:0 0 cal(50% -16px);
+	}
+
+}
+@media screen and (min-width: 972px){
+	.about{
+		flex:0 0 calc(33.3% -16%);
+	}
+}
+.menu-image{
+	min-height: 80vh;
+	background:url('food4.png')center/cover fixed no-repeat;
+}
+.menu-text{
+	min-height: 80vh;
+	align-items: center;
+	background: orange;
+	columns:#000;
+	padding:40px 0;
+}
+.menu-text-center{
+	width:90%;
+	margin:0 auto;
+}
+.menu-text h1{
+	font-size:40px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.menu-text p{
+	margin: 20px 0;
+	line-height: 2;
+
+}
+.menu-text a{
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 13px 20px;
+	border-radius: 200px;
+	font-weight: bold;
+	background: rgb(10,10,10);
+	color: orange;
+	border:2px solid #000;
+	cursor: pointer;
+}
+.menu-text a:hover{
+	color:orange;
+	background: white;
+	border:none;
+}
+@media screen and (min-width: 776px){
+	.menu{
+		display:flex;
+	}
+	.menu-text{
+		flex: 0 0 30%;
+	}
+	.menu-image{
+		flex:0 0 70%;
+		clip-path:polygon(0 0, 100% 0, 50% 100%, 0 100%);
+	}
+	.menu{
+		background: orange;
+	}
+	}
+}
+#social-icons{
+	height: 150px;
+	background: white;
+	text-align: center;
+	padding: 50px 0 50px 0;
+	text-align: center;
+}
+#social-icons a{
+	display: inline-block;
+	padding: 5px 10px;
+	margin: 0 5px;
+	font-size: 40px;
+	border-radius: 5px;
+	transition: transform 2s ease, color 2s ease;
+	text-align: center;
+}
+#social-icons a:hover{
+	transform: translateY(-20px);
+}
+.facebook{
+	color: #3b5998;
+}
+.twitter{
+	color: #38a1f3;
+}
+.instagram{
+	color: #e1306c;
+}
+.plus{
+	color: #db4a39;
+}
+.numbers{
+	text-align: center;
+	background: linear-gradient(rgba(0,0,0,0.3),rgba(0, 0, 0, 0.4)),url('food10.png')center/cover fixed no-repeat;
+	padding: 60px 0;
+	color: white;
+}
+.numbers p{
+	font-size: 30px;
+	font-weight: bold;
+}
+.numbers:hover{
+color: orange;
+
+}
+.numbers .fas{
+	font-size: 60px;
+	margin:20px 0;
+}
+.numbers h3{
+	text-transform: uppercase;
+}
+@media screen and(min-width: 576px){
+	#numbers{
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media screen and (min-width: 992px){
+	#numbers{
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+.Address{
+	text-align: center;
+	background: linear-gradient(rgba(0,0,0,0.3),rgba(0, 0, 0, 0.4)),url('food11.png')center/cover fixed no-repeat;
+	padding: 60px 0;
+	color: black;
+
+}
